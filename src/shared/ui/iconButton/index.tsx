@@ -12,7 +12,7 @@ export const IconButton = ({ icon: Icon, description, className }: Props) => {
     <div
       className={clsx(
         className,
-        "flex items-center gap-1 justify-center p-2 min-w-0 bg-[var(--foreground)] cursor-pointer",
+        "flex items-center gap-1 p-4 min-w-0 bg-[var(--foreground)] cursor-pointer",
       )}
     >
       {Icon ? <Icon className="shrink-0" /> : <Dot />}

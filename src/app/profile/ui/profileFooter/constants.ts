@@ -23,10 +23,6 @@ export const profileButtons: TIconButton[] = [
   { icon: Bookmark, description: "Закладки" },
 ];
 
-export const telegramButton: TIconButton[] = [
-  { icon: "", description: "@ribakit3" },
-];
-
 export const infoButtons: TIconButton[] = [
   { icon: "", description: "Возможности ИГРУМА" },
   { icon: "", description: "Правила ИГРУМА" },

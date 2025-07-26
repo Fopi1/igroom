@@ -1,12 +1,13 @@
+import { StackList } from "@/shared/ui/stackList";
 import {
   buttons,
   historyOfMettings,
   infoButtons,
   logoutButton,
   profileButtons,
-  telegramButton,
 } from "./constants";
 import { ButtonEnumerator } from "@/shared/ui/buttonsEnumerator";
+import { AboutMe } from "./aboutMe";
 
 export const ProfileFooter = () => {
   return (
@@ -14,7 +15,7 @@ export const ProfileFooter = () => {
       <ButtonEnumerator arrayOfButtons={historyOfMettings} />
       <ButtonEnumerator arrayOfButtons={buttons} />
       <ButtonEnumerator arrayOfButtons={profileButtons} />
-      <ButtonEnumerator arrayOfButtons={telegramButton} />
+      <AboutMe telegram="ribakit3"></AboutMe>
       <ButtonEnumerator arrayOfButtons={infoButtons} />
       <ButtonEnumerator arrayOfButtons={logoutButton} />
     </div>

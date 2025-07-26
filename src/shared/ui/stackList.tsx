@@ -1,5 +1,6 @@
 import { cloneElement, ReactElement, ReactNode } from "react";
 import clsx from "clsx";
+import { HorizontalSeparator } from "./horizontalSeparator";
 
 interface Props {
   children: ReactElement<{ className?: string }>[];
@@ -11,8 +12,8 @@ interface Props {
 
 export const StackList = ({
   children,
-  separator,
   className,
+  separator = < HorizontalSeparator />,
   firstItemClassName = "rounded-t-2xl",
   lastItemClassName = "rounded-b-2xl",
 }: Props) => {
